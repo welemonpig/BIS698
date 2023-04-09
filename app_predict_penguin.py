@@ -17,7 +17,7 @@ with tab1:
     island_encoder = pickle.load(open('encoder.island.sav','rb'))
     sex_encoder = pickle.load(open('encoder.sex.sav','rb'))
 
-    st.title('Penguin Species Prection :) ')
+    st.header('Penguin Species Prediction :) ')
 
     x1 = st.radio('Select island', island_encoder.classes_)
     x1 = island_encoder.transform([x1])[0]
@@ -67,19 +67,19 @@ with tab3:
     st.divider()
     st.subheader("Adelie Penguin")
     st.markdown("The Adélie penguin (Pygoscelis adeliae) is a species of penguin common along the entire coast of the SAntarctic continent, which is the only place where it is found. It is the most widespread penguin species, and,along with the emperor penguin, is the most southerly distributed of all penguins. It is named after Adélie Land, in turn, named for Adèle Dumont d'Urville, who was married to French explorer Jules Dumont d'Urville, who first discovered this penguin in 1840. Adélie penguins obtain their food by both predation and foraging, with a diet of mainly krill and fish.")
-    expander = st.expander("See Adelie penguin")
+    expander = st.expander("See Adelie Penguin")
     expander.image("Adelie.jpeg")
     
     st.divider()
     st.subheader("Chinstrap Penguin")
     st.markdown("The chinstrap penguin (Pygoscelis antarcticus) is a species of penguin that inhabits a variety of islands and shores in the Southern Pacific and the Antarctic Oceans. Its name stems from the narrow black band under its head, which makes it appear as if it were wearing a black helmet, making it easy to identify.[2] Other common names include ringed penguin, bearded penguin, and stonecracker penguin, due to its loud, harsh call.")
-    expander = st.expander("See Chinstrap penguin")
+    expander = st.expander("See Chinstrap Penguin")
     expander.image("Chinstrap.jpeg")
     
     st.divider()
     st.subheader("Gentoo Penguin")
     st.markdown("The gentoo penguin (/ˈdʒɛntuː/ JEN-too) (Pygoscelis papua) is a penguin species (or possibly a species complex) in the genus Pygoscelis, most closely related to the Adélie penguin (P. adeliae) and the chinstrap penguin (P. antarcticus). The earliest scientific description was made in 1781 by Johann Reinhold Forster with a type locality in the Falkland Islands. The species calls in a variety of ways, but the most frequently heard is a loud trumpeting, which the bird emits with its head thrown back.")
-    expander = st.expander("See Gentoo penguin")
+    expander = st.expander("See Gentoo Penguin")
     expander.image("Gentoo.jpeg")
         
     
