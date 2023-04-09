@@ -1,4 +1,3 @@
-%%writefile app_predict_penguin.py
 
 import numpy as np
 import pandas as pd
